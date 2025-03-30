@@ -69,8 +69,77 @@ Supporting Tools: Python for text cleaning and normalization
 Both report with results as well as the prompts used and the answers are included in the files: Part1_Prompts & Report_Assignment3_KormaTS_S6006965
 
 
-# PART 2: 
+# PART 2: Annotation of songs’ lyrics using Ollama
 
+## Overview
+
+This project includes the annotation of song lyrics' genres with the Llama3 model from Ollama's Python library. The model is demonstrated in both Zero-Shot and Few-Shot prompting approaches in classifying song lyrics into different genres, including Rock, Electronic, Hip-Hop, Pop, and others.
+
+The annotated genres are: Rock, Electronic, Hip-Hop, Pop, Other, R&B, Country, Jazz, Metal, Folk and Indie.
+
+## Model Selection
+
+The Llama3 model was chosen over Mistral since it has a superior natural language understanding and also has multilingual capabilities. This becomes especially important for the analysis of song lyrics in different languages since Llama3 is more capable of handling multilingual input than Mistral.
+
+## Prompting Strategies
+
+`Zero-Shot Prompting`
+`Few-Shot Prompting`
+
+**Zero-Shot Classification Report**
+
+**Accuracy**: 0.00  
+**Macro Avg**: Precision 0.00, Recall 0.00, F1-Score 0.00  
+**Weighted Avg**: Precision 0.00, Recall 0.00, F1-Score 0.00
+
+| Category   | Precision | Recall | F1-Score |
+|------------|-----------|--------|----------|
+| Classical  | 0.00      | 0.00   | 0.00     |
+| Country    | 0.00      | 0.00   | 0.00     |
+| Electronic | 0.00      | 0.00   | 0.00     |
+| Folk       | 0.00      | 0.00   | 0.00     |
+| Hip-Hop    | 0.00      | 0.00   | 0.00     |
+| Indie      | 0.00      | 0.00   | 0.00     |
+| J-Pop      | 0.00      | 0.00   | 0.00     |
+| Jazz       | 0.00      | 0.00   | 0.00     |
+| Metal      | 0.00      | 0.00   | 0.00     |
+| Non        | 0.00      | 0.00   | 0.00     |
+| Other      | 0.00      | 0.00   | 0.00     |
+| Pop        | 0.00      | 0.00   | 0.00     |
+| R&B        | 0.00      | 0.00   | 0.00     |
+| Rap        | 0.00      | 0.00   | 0.00     |
+| Rock       | 0.00      | 0.00   | 0.00     |
+| unknown    | 0.00      | 0.00   | 0.00     |
+
+
+**Few-Shot Classification Report**
+
+**Accuracy**: 0.07  
+**Macro Avg**: Precision 0.01, Recall 0.06, F1-Score 0.01  
+**Weighted Avg**: Precision 0.01, Recall 0.07, F1-Score 0.01
+
+| Category   | Precision | Recall | F1-Score |
+|------------|-----------|--------|----------|
+| Classical  | 0.00      | 0.00   | 0.00     |
+| Country    | 0.00      | 0.00   | 0.00     |
+| Electronic | 0.00      | 0.00   | 0.00     |
+| Folk       | 0.00      | 0.00   | 0.00     |
+| Hip-Hop    | 0.00      | 0.00   | 0.00     |
+| Indie      | 0.00      | 0.00   | 0.00     |
+| J-Pop      | 0.00      | 0.00   | 0.00     |
+| Jazz       | 0.00      | 0.00   | 0.00     |
+| Metal      | 0.00      | 0.00   | 0.00     |
+| Non        | 0.00      | 0.00   | 0.00     |
+| Other      | 0.00      | 0.00   | 0.00     |
+| Pop        | 0.00      | 0.00   | 0.00     |
+| R&B        | 0.00      | 0.00   | 0.00     |
+| Rap        | 0.00      | 0.00   | 0.00     |
+| Rock       | 0.09      | 1.00   | 0.17     |
+| unknown    | 0.00      | 0.00   | 0.00     |
+
+
+## NOTE
+Report with results and suggestions for improvement is submitted under the file name Report_Assignment3_KormaTS_S6006965.
 
 
 
